@@ -1,0 +1,91 @@
+<!-- info_ocra.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERGOTECH - Información OCRA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Otros estilos si es necesario -->
+    <!-- LOGO -->
+    <link href="{{ url_for('static', filename='imagenes/logo.png') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-light">
+    <!-- Topbar Start -->
+    {% include 'topbar.html' %}
+     <!-- Topbar End -->    
+
+    <!-- Navbar Start -->
+    {% include 'navbar.html' %}
+    <!-- Navbar End -->    
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Información OCRA Start -->
+                <div class="bg-white p-4">
+                    <h1 class="text-primary mb-4">Información sobre el Método OCRA</h1>
+                    <p>El método OCRA (Occupational Repetitive Actions) es una herramienta utilizada para evaluar el riesgo ergonómico asociado con tareas repetitivas en el entorno laboral. Este método permite identificar y cuantificar los riesgos relacionados con la repetitividad de las tareas y la carga física que estas imponen en el trabajador.</p>
+                    <h2 class="mt-4">Cómo Funciona</h2>
+                    <p>El análisis OCRA se basa en una serie de parámetros y factores que se deben evaluar para determinar el nivel de riesgo ergonómico. Estos parámetros incluyen:</p>
+                    <ul>
+                        <li>La frecuencia de la tarea</li>
+                        <li>La duración de la tarea</li>
+                        <li>La fuerza aplicada</li>
+                        <li>La postura adoptada</li>
+                        <li>El número de repeticiones</li>
+                    </ul>
+                    <p>El método proporciona una puntuación que ayuda a identificar si las condiciones laborales son aceptables o si es necesario realizar ajustes para reducir el riesgo de lesiones.</p>
+                    
+                    <h2 class="mt-4">Beneficios de Utilizar OCRA</h2>
+                    <ul>
+                        <li>Identificación temprana de riesgos ergonómicos</li>
+                        <li>Mejora en las condiciones laborales</li>
+                        <li>Reducción de lesiones relacionadas con el trabajo</li>
+                        <li>Optimización de los procesos y tareas</li>
+                    </ul>
+
+                    <h2 class="mt-4">Más Información</h2>
+                    <p>Para obtener más detalles sobre cómo aplicar el método OCRA en su entorno laboral, consulte el manual o contacte con un especialista en ergonomía.</p>
+                </div>
+                <!-- Información OCRA End -->
+            </div>
+            <!-- Sidebar Start -->
+            <div class="col-lg-4 mt-5 mt-lg-0">                
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-center p-4">
+                        <h1 class="text-white m-0">Información Adicional</h1>
+                    </div>
+                    <div class="bg-white p-4">
+                        <h3 class="mb-2">¿Necesita Ayuda?</h3>
+                        <p>Si tiene alguna pregunta o necesita asistencia adicional, no dude en contactarnos.</p>
+                        <a href="/contacto" class="btn btn-primary">Contáctenos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar End -->
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    {% include 'footer.html' %}
+    <!-- Footer End -->
+
+</body>
+</html>
